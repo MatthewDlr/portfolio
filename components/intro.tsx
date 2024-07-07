@@ -88,7 +88,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contact me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
@@ -96,7 +96,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download my Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
       </motion.div>
     </section>
