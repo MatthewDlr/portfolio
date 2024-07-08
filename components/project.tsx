@@ -25,8 +25,8 @@ export default function Project({ title, description, tags, imageUrl, redirectUr
         opacity: opacityProgress,
       }}
       className="group mb-3 last:mb-0 w-full"
+      id="project"
     >
-      <section>
         <CardContainer className="inter-var">
           <CardBody className="bg-white/50 dark:bg-black/50 relative group/card  dark:hover:shadow-2xl dark:border-white/20 border-black/[0.1] w-auto sm:w-1/2 h-auto rounded-xl p-6 border  ">
             <CardItem
@@ -72,7 +72,6 @@ export default function Project({ title, description, tags, imageUrl, redirectUr
             </div>
           </CardBody>
         </CardContainer>
-      </section>
     </motion.div>
   );
 }
