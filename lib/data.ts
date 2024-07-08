@@ -1,12 +1,11 @@
-import transmitImg from "@/public/transmit.png";
-import ratioImg from "@/public/ratio.png";
-import prospectixImg from "@/public/Prospectix-8.png";
-import digitalAwarenessImg from "@/public/digital-awareness.png";
-import heartBeatsImg from "@/public/heartBeats.png";
+import prospectixImg from "@/public/Prospectix-8.webp";
+import digitalAwarenessImg from "@/public/digital-awareness.webp";
+import heartBeatsImg from "@/public/heartBeats.webp";
+import ratioImg from "@/public/ratio.webp";
+import transmitImg from "@/public/transmit.webp";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaAngular, FaDev, FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaDev } from "react-icons/fa";
 
 export const links = [
   {
