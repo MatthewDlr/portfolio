@@ -12,8 +12,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import GithubButton from "@/components/github-button";
 
 const inter = Inter({ subsets: ["latin"] });
-const _analytics = Analytics;
-const _speedInsights = SpeedInsights;
 
 export const metadata = {
   title: "Matthew's Portfolio",
@@ -43,6 +41,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <GithubButton></GithubButton>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
