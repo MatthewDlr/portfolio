@@ -7,9 +7,13 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { AuroraBackground } from "@/components/aurora-background";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import GithubButton from "@/components/github-button";
 
 const inter = Inter({ subsets: ["latin"] });
+const _analytics = Analytics;
+const _speedInsights = SpeedInsights;
 
 export const metadata = {
   title: "Matthew's Portfolio",
