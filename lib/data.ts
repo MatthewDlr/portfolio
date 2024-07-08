@@ -81,7 +81,7 @@ export const projectsData = [
   {
     title: "Digital Awareness",
     description:
-      "Digital Awareness is a Chrome extension I developed to be more productive by hiding distracting websites behind a timed-walled. No need to resist temptation then, all you need is wait enough.",
+      "Digital Awareness is a Chrome extension I developed to be more productive by hiding distracting websites behind a timed-wall. No need to resist temptation then, all you need is wait enough. This project is still in beta and not fully released",
     tags: ["Angular", "Tailwind", "Chrome API", "GitHub Actions"],
     imageUrl: digitalAwarenessImg,
     redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
@@ -89,7 +89,7 @@ export const projectsData = [
   {
     title: "HeartBeats",
     description:
-      "HeartBeats is a group project that aimed to create a fictional startup with a product idea. Our objective was to design a website that adapts music to environmental changes, such as physical activity. This marks my very first attempt at web development in January 2023, and our website did not utilize any frameworks.",
+      "HeartBeats is a group project that aimed to create a fictional startup with a product idea. Our objective was to design a website that adapts music to environmental changes, such as physical activity. This marks my very first attempt at web development in January 2023",
     tags: ["HTML", "CSS", "JS", "PHP"],
     imageUrl: heartBeatsImg,
     redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
