@@ -2,7 +2,7 @@
 
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
-import ProfilePictureImg from "@/public/profile-picture.png";
+import ProfilePictureImg from "@/public/profile-picture.webp";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
