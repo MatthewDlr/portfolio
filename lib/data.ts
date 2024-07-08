@@ -5,7 +5,7 @@ import digitalAwarenessImg from "@/public/digital-awareness.png";
 import heartBeatsImg from "@/public/heartBeats.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaAngular, FaDev, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
@@ -37,27 +37,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description: "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Solutions Engineer",
+    location: "Doctolib, Paris",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked within the Team Support to address concerns from health professionals. As part of my internship project, I developed a database of SQL queries aimed at streamlining case resolutions for my team.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Sept 2023 - Jan 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Technical Manager",
+    location: "Junior ISEP, Paris",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Junior ISEP is an association within my school that I helped develop many internal tools to participate in its growth and progress.",
+    icon: React.createElement(FaDev),
+    date: "July 2023 - July 2024",
   },
 ] as const;
 

@@ -12,8 +12,8 @@ import GithubButton from "@/components/github-button";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Matthew Personal Portfolio",
-  description: "I'm an aspiring UX Engineer",
+  title: "Matthew's Portfolio",
+  description: "An aspiring UX Engineer",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -29,8 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
-            <AuroraBackground>{children}</AuroraBackground>
-            <Footer />
+            <AuroraBackground>
+              {children}
+              <Footer />
+            </AuroraBackground>
 
             <Toaster position="top-right" />
             <ThemeSwitch />
