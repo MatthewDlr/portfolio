@@ -1,10 +1,12 @@
+import transmitImg from "@/public/transmit.png";
+import ratioImg from "@/public/ratio.png";
+import prospectixImg from "@/public/Prospectix-8.png";
+import digitalAwarenessImg from "@/public/digital-awareness.png";
+import heartBeatsImg from "@/public/heartBeats.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -37,8 +39,7 @@ export const experiencesData = [
   {
     title: "Graduated bootcamp",
     location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    description: "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
@@ -62,25 +63,44 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Transmit",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Transmit is a group project designed to simulate the functionality and features of a social networking platform, such as Facebook.",
+    tags: ["Angular", "Tailwind", "Supabase", "d3.js", "Vercel"],
+    imageUrl: transmitImg,
+    redirectUrl: "https://transmit-project.vercel.app/about",
   },
   {
-    title: "rmtDev",
+    title: "Ratio",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Ratio is a group project made in web class. We decided to make a podcast player capable of streaming podcasts, discover tailored content, and upload new episodes",
+    tags: ["Angular", "Tailwind", "Spring Boot", "PostgreSQL", "Docker"],
+    imageUrl: ratioImg,
+    redirectUrl: "https://github.com/smansteel/A2Web",
   },
   {
-    title: "Word Analytics",
+    title: "Prospectix 8",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "I developed the next evolution of an internal Junior ISEP tool. My updates were focused on making the app responsive on mobile devices, enhancing the overall usability, and ensuring its long-term sustainability by rewriting components.",
+    tags: ["Angular", "Tailwind", "DaisyUI", "NestJs", "TypeORM", "PostgreSQL", "Docker", "GitLab CI"],
+    imageUrl: prospectixImg,
+    redirectUrl: "https://staging.prospectix.juniorisep.com",
+  },
+  {
+    title: "Digital Awareness",
+    description:
+      "Digital Awareness is a Chrome extension I developed to be more productive by hiding distracting websites behind a timed-walled. No need to resist temptation then, all you need is wait enough.",
+    tags: ["Angular", "Tailwind", "Chrome API", "GitHub Actions"],
+    imageUrl: digitalAwarenessImg,
+    redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
+  },
+  {
+    title: "HeartBeats",
+    description:
+      "HeartBeats is a group project that aimed to create a fictional startup with a product idea. Our objective was to design a website that adapts music to environmental changes, such as physical activity. This marks my very first attempt at web development in January 2023, and our website did not utilize any frameworks.",
+    tags: ["HTML", "CSS", "JS", "PHP"],
+    imageUrl: heartBeatsImg,
+    redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
   },
 ] as const;
 
