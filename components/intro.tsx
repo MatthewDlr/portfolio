@@ -17,7 +17,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-30 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -57,7 +57,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-3xl font-medium !leading-[1.5] sm:text-5xl text-gray-950 dark:text-sky-50"
+        className="mb-10 mt-4 px-4 text-3xl font-medium !leading-[1.5] sm:text-5xl text-gray-900 dark:text-gray-100"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35 }}
@@ -82,7 +82,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 hover:bg-gray-950 dark:bg-white dark:text-gray-950 transition-all"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 hover:bg-gray-950 dark:bg-gray-100 dark:text-black transition-all"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());

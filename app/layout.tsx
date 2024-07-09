@@ -41,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <GithubButton></GithubButton>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
+        
         <Analytics />
         <SpeedInsights />
       </body>

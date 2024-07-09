@@ -1,8 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import Image from "next/image";
-import React, { createContext, useState, useContext, useRef, useEffect } from "react";
+import React, { createContext, useContext, useEffect, useRef, useState } from "react";
 
 const MouseEnterContext = createContext<[boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined>(undefined);
 
@@ -39,7 +38,7 @@ export const CardContainer = ({
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
-        className={cn("py-10 flex items-center justify-center w-full", containerClassName)}
+        className={cn("pb-20 flex items-center justify-center", containerClassName)}
         style={{
           perspective: "1000px",
         }}
@@ -49,7 +48,7 @@ export const CardContainer = ({
           onMouseEnter={handleMouseEnter}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
-          className={cn("flex items-center justify-center relative transition-all duration-200 ease-linear w-full", className)}
+          className={cn("flex items-center justify-center relative transition-all duration-200 ease-linear", className)}
           style={{
             transformStyle: "preserve-3d",
           }}
