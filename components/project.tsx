@@ -24,7 +24,7 @@ export default function Project({ title, description, tags, imageUrl, redirectUr
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 last:mb-0 w-full"
+      className="group last:mb-0"
       id="project"
     >
       <CardContainer className="inter-var">
@@ -38,7 +38,7 @@ export default function Project({ title, description, tags, imageUrl, redirectUr
           <CardItem
             as="p"
             translateZ="35"
-            className="text-sky-500/90 text-sm w-full mt-2 dark:text-sky-100/90"
+            className="text-sky-500/90 text-sm mt-2 dark:text-sky-100/90"
           >
             {description}
           </CardItem>

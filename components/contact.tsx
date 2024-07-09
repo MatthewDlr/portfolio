@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 import toast from "react-hot-toast";
+import SectionHeading from "./section-heading";
+import SubmitBtn from "./submit-btn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -31,9 +30,12 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="text-gray-700 -mt-6 dark:text-white/80 text-pretty">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:matthieu.delarue@berkeley.edu">
+        <a
+          className="underline"
+          href="mailto:matthieu.delarue@berkeley.edu"
+        >
           matthieu.delarue@berkeley.edu
         </a>{" "}
         or through this form.
@@ -53,18 +55,20 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 rounded-lg dark:bg-white/15 border border-black/15 dark:border-white/15 dark:text-white transition-all outline-none focus:rounded-2xl"
           name="senderEmail"
           type="email"
           required
-          maxLength={500}
+          autoComplete="true"
+          maxLength={100}
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg p-4 dark:bg-white/15 border border-black/15 dark:border-white/15 dark:text-white transition-all outline-none resize-none focus:rounded-2xl"
           name="message"
           placeholder="Your message"
           required
+          autoCorrect="true"
           maxLength={5000}
         />
         <SubmitBtn />
