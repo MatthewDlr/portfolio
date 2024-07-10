@@ -73,7 +73,7 @@ export const projectsData = [
   {
     title: "Prospectix 8",
     description:
-      "I developed the next evolution of an internal Junior ISEP tool. My updates were focused on making the app responsive on mobile devices, enhancing the overall usability, and ensuring its long-term sustainability by rewriting components.",
+      "I developed the next evolution of an internal tool made by Junior ISEP. My updates were focused on making the app responsive on mobile devices, enhancing the overall usability, and ensuring its long-term sustainability by rewriting components.",
     tags: ["Angular", "Tailwind", "DaisyUI", "NestJs", "TypeORM", "PostgreSQL", "Docker", "GitLab CI"],
     imageUrl: prospectixImg,
     redirectUrl: "https://staging.prospectix.juniorisep.com",

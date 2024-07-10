@@ -28,51 +28,55 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <div className="relative h-full w-full">
+        <div className="absolute z-[-2] md:scale-150 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] dark:bg-[radial-gradient(#2d2d2e_1px,transparent_1px)]"></div>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80 text-pretty">
-        Please contact me directly at{" "}
-        <a
-          className="underline"
-          href="mailto:matthieu.delarue@berkeley.edu"
+        <SectionHeading>Contact me</SectionHeading>
+
+        <p className="text-gray-700 dark:text-white/80 text-pretty">
+          Please contact me directly at{" "}
+          <a
+            className="underline"
+            href="mailto:matthieu.delarue@berkeley.edu"
+          >
+            matthieu.delarue@berkeley.edu
+          </a>{" "}
+          or through this form.
+        </p>
+
+        <form
+          className="mt-10 flex flex-col dark:text-black"
+          action={async (formData) => {
+            const { data, error } = await sendEmail(formData);
+
+            if (error) {
+              toast.error(error);
+              return;
+            }
+
+            toast.success("Email sent successfully!");
+          }}
         >
-          matthieu.delarue@berkeley.edu
-        </a>{" "}
-        or through this form.
-      </p>
-
-      <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
-      >
-        <input
-          className="h-14 px-4 rounded-lg dark:bg-white/15 border border-black/15 dark:border-white/15 dark:text-white transition-all outline-none focus:rounded-2xl"
-          name="senderEmail"
-          type="email"
-          required
-          autoComplete="true"
-          maxLength={100}
-          placeholder="Your email"
-        />
-        <textarea
-          className="h-52 my-3 rounded-lg p-4 dark:bg-white/15 border border-black/15 dark:border-white/15 dark:text-white transition-all outline-none resize-none focus:rounded-2xl"
-          name="message"
-          placeholder="Your message"
-          required
-          autoCorrect="true"
-          maxLength={5000}
-        />
-        <SubmitBtn />
-      </form>
+          <input
+            className="h-14 px-4 rounded-lg dark:bg-white/15 border border-black/15 dark:border-white/15 dark:text-white transition-all outline-none focus:rounded-2xl backdrop-blur-xl"
+            name="senderEmail"
+            type="email"
+            required
+            autoComplete="true"
+            maxLength={100}
+            placeholder="Your email"
+          />
+          <textarea
+            className="h-52 my-3 rounded-lg p-4 dark:bg-white/15 border border-black/15 dark:border-white/15 dark:text-white transition-all outline-none resize-none focus:rounded-2xl backdrop-blur-xl"
+            name="message"
+            placeholder="Your message"
+            required
+            autoCorrect="true"
+            maxLength={5000}
+          />
+          <SubmitBtn />
+        </form>
+      </div>
     </motion.section>
   );
 }
