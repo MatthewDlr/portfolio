@@ -3,6 +3,7 @@ import digitalAwarenessImg from "@/public/digital-awareness.webp";
 import heartBeatsImg from "@/public/heartBeats.webp";
 import ratioImg from "@/public/ratio.webp";
 import transmitImg from "@/public/transmit.webp";
+import sudokuImg from "@/public/sudoku.webp";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaDev } from "react-icons/fa";
@@ -73,7 +74,7 @@ export const projectsData = [
   {
     title: "Prospectix 8",
     description:
-      "I developed the next evolution of an internal Junior ISEP tool. My updates were focused on making the app responsive on mobile devices, enhancing the overall usability, and ensuring its long-term sustainability by rewriting components.",
+      "I developed the next evolution of an internal tool made by Junior ISEP. My updates were focused on making the app responsive on mobile devices, enhancing the overall usability, and ensuring its long-term sustainability by rewriting components.",
     tags: ["Angular", "Tailwind", "DaisyUI", "NestJs", "TypeORM", "PostgreSQL", "Docker", "GitLab CI"],
     imageUrl: prospectixImg,
     redirectUrl: "https://staging.prospectix.juniorisep.com",
@@ -94,24 +95,31 @@ export const projectsData = [
     imageUrl: heartBeatsImg,
     redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
   },
+  {
+    title: "Sudoku Solver",
+    description: "This program is able to solve any given sudoku grid using a backtracking algorithm",
+    tags: ["Python"],
+    imageUrl: sudokuImg,
+    redirectUrl: "https://github.com/MatthewDlr/sudoku-solver",
+  },
 ] as const;
 
 export const skillsData = [
+  "Python",
+  "Java",
+  "PHP",
   "Angular",
   "TailwindCSS",
   "Nest.js",
   "TypeORM",
-  "Supabase",
-  "TensorFlow.js",
-  "Next.js",
-  "Git",
-  "Vercel",
-  "d3.js",
   "PostgreSQL",
   "SQL",
-  "Python",
-  "PHP",
-  "Java",
+  "Supabase",
+  "Next.js",
+  "TensorFlow.js",
+  "Git",
+  "d3.js",
+  "Vercel",
   "Docker",
   "Figma",
   "Metabase",
