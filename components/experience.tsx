@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref, inView } = useSectionInView("Experience");
   const { theme } = useTheme();
 
   return (
@@ -22,11 +22,14 @@ export default function Experience() {
       className="scroll-mt-32 my-32 sm:mb-40"
     >
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline
+        lineColor=""
+        animate={true}
+      >
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-              visible={true}
+            visible={inView}
               contentStyle={{
                 background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
