@@ -59,7 +59,7 @@ export const projectsData = [
     title: "Transmit",
     description:
       "Transmit is a group project designed to simulate the functionality and features of a social networking platform, such as Facebook.",
-    tags: ["Angular", "Tailwind", "Supabase", "d3.js", "Vercel"],
+    tags: ["Angular", "TailwindCSS", "Supabase", "d3.js", "Vercel"],
     imageUrl: transmitImg,
     redirectUrl: "https://transmit-project.vercel.app/about",
   },
@@ -67,7 +67,7 @@ export const projectsData = [
     title: "Ratio",
     description:
       "Ratio is a group project made in web class. We decided to make a podcast player capable of streaming podcasts, discover tailored content, and upload new episodes",
-    tags: ["Angular", "Tailwind", "Spring Boot", "PostgreSQL", "Docker"],
+    tags: ["Angular", "TailwindCSS", "Spring Boot", "PostgreSQL", "Docker"],
     imageUrl: ratioImg,
     redirectUrl: "https://github.com/smansteel/A2Web",
   },
@@ -75,7 +75,7 @@ export const projectsData = [
     title: "Prospectix 8",
     description:
       "I developed the next evolution of an internal tool made by Junior ISEP. My updates were focused on making the app responsive on mobile devices, enhancing the overall usability, and ensuring its long-term sustainability by rewriting components.",
-    tags: ["Angular", "Tailwind", "DaisyUI", "NestJs", "TypeORM", "PostgreSQL", "Docker", "GitLab CI"],
+    tags: ["Angular", "TailwindCSS", "DaisyUI", "NestJs", "TypeORM", "PostgreSQL", "Docker", "GitLab CI"],
     imageUrl: prospectixImg,
     redirectUrl: "https://staging.prospectix.juniorisep.com",
   },
@@ -83,9 +83,16 @@ export const projectsData = [
     title: "Digital Awareness",
     description:
       "Digital Awareness is a Chrome extension I developed to be more productive by hiding distracting websites behind a timed-wall. No need to resist temptation then, all you need is wait enough. This project is still in beta and not fully released.",
-    tags: ["Angular", "Tailwind", "Chrome API", "GitHub Actions"],
+    tags: ["Angular", "TailwindCSS", "TensorFlow", "Chrome API", "GitHub Actions"],
     imageUrl: digitalAwarenessImg,
-    redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
+    redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness",
+  },
+  {
+    title: "Sudoku Solver",
+    description: "This program is able to solve any given sudoku grid using a backtracking algorithm.",
+    tags: ["Python"],
+    imageUrl: sudokuImg,
+    redirectUrl: "https://github.com/MatthewDlr/sudoku-solver",
   },
   {
     title: "HeartBeats",
@@ -93,14 +100,7 @@ export const projectsData = [
       "HeartBeats is a group project that aimed to create a fictional startup with a product idea. Our objective was to design a website that adapts music to environmental changes, such as physical activity. This marked my very first attempt at web development in January 2023",
     tags: ["HTML", "CSS", "JS", "PHP"],
     imageUrl: heartBeatsImg,
-    redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
-  },
-  {
-    title: "Sudoku Solver",
-    description: "This program is able to solve any given sudoku grid using a backtracking algorithm",
-    tags: ["Python"],
-    imageUrl: sudokuImg,
-    redirectUrl: "https://github.com/MatthewDlr/sudoku-solver",
+    redirectUrl: "https://github.com/HeartBeats-APP/HeartBeats-Website",
   },
 ] as const;
 
@@ -119,6 +119,7 @@ export const skillsData = [
   "TensorFlow.js",
   "Git",
   "d3.js",
+  "Framer",
   "Vercel",
   "Docker",
   "Figma",
