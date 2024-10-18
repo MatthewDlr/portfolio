@@ -67,7 +67,7 @@ export default function Intro() {
             Hi, I'm <span className="font-bold"> Matthew,</span>
           </span>
           <span>
-            a junior <span className="font-bold">UX Engineer</span>.
+            a junior <span className="font-bold">Software Engineer</span>.
           </span>
         </div>
       </motion.h1>
