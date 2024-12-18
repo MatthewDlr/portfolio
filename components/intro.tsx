@@ -32,11 +32,11 @@ export default function Intro() {
             <Image
               src={ProfilePictureImg}
               alt="Matthew Portrait"
-              width="192"
-              height="192"
+              width="256"
+              height="256"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white border-opacity-75 shadow-xl"
+              className="size-36 rounded-full object-cover border-[0.35rem] border-white border-opacity-75 shadow-xl"
             />
           </motion.div>
 
@@ -90,14 +90,6 @@ export default function Intro() {
         >
           Contact me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
-          href="/CV.pdf"
-          download
-        >
-          Download my Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
       </motion.div>
     </section>
   );

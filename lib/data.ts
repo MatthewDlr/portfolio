@@ -1,9 +1,10 @@
 import prospectixImg from "@/public/Prospectix-8.webp";
 import digitalAwarenessImg from "@/public/digital-awareness.webp";
-import heartBeatsImg from "@/public/heartBeats.webp";
 import ratioImg from "@/public/ratio.webp";
 import transmitImg from "@/public/transmit.webp";
 import sudokuImg from "@/public/sudoku.webp";
+import tailwindPaletteGeneratorImg from "@/public/tailwindPaletteGenerator.webp";
+import satelliteImg from "@/public/satellite.webp";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaDev } from "react-icons/fa";
@@ -45,7 +46,7 @@ export const experiencesData = [
     date: "Sept 2023 - Jan 2024",
   },
   {
-    title: "Technical Manager",
+    title: "Software Engineer",
     location: "Junior ISEP, Paris",
     description:
       "Junior ISEP is an association within my school that I helped develop many internal tools to participate in its growth and progress.",
@@ -55,6 +56,20 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Tailwind Palette Generator",
+    description: "A fresh new color palette generator, supporting the new upcoming tailwindcss 4.0 configuration file.",
+    tags: ["Angular", "TailwindCSS", "Vercel"],
+    imageUrl: tailwindPaletteGeneratorImg,
+    redirectUrl: "https://app.daily.dev/posts/7axa8iWBo",
+  },
+  {
+    title: "Satellite UI",
+    description: "Communicate with the serial port of your computer and display in real time the calculated position of a satellite.",
+    tags: ["Angular", "TailwindCSS", "Arduino", "Vercel"],
+    imageUrl: satelliteImg,
+    redirectUrl: "https://medium.com/@matthieu.delarue/follow-satellites-with-arduino-angular-e0a8058dd3df",
+  },
   {
     title: "Transmit",
     description:
@@ -82,10 +97,10 @@ export const projectsData = [
   {
     title: "Digital Awareness",
     description:
-      "Digital Awareness is a Chrome extension I developed to be more productive by hiding distracting websites behind a timed-wall. No need to resist temptation then, all you need is wait enough. This project is still in beta and not fully released.",
+      "Digital Awareness is a Chrome extension I developed to be more productive by hiding distracting websites behind a timed-wall. No need to resist temptation then, all you need is wait enough.",
     tags: ["Angular", "TailwindCSS", "TensorFlow", "Chrome API", "GitHub Actions"],
     imageUrl: digitalAwarenessImg,
-    redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness",
+    redirectUrl: "https://chromewebstore.google.com/detail/digital-awareness/eciijpgppecgdjfemignfbgnnhnmnkia?hl=en",
   },
   {
     title: "Sudoku Solver",
@@ -93,14 +108,6 @@ export const projectsData = [
     tags: ["Python"],
     imageUrl: sudokuImg,
     redirectUrl: "https://github.com/MatthewDlr/sudoku-solver",
-  },
-  {
-    title: "HeartBeats",
-    description:
-      "HeartBeats is a group project that aimed to create a fictional startup with a product idea. Our objective was to design a website that adapts music to environmental changes, such as physical activity. This marked my very first attempt at web development in January 2023",
-    tags: ["HTML", "CSS", "JS", "PHP"],
-    imageUrl: heartBeatsImg,
-    redirectUrl: "https://github.com/HeartBeats-APP/HeartBeats-Website",
   },
 ] as const;
 
