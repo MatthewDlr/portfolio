@@ -38,6 +38,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineer",
+    location: "Pigment SAS",
+    description:
+      "Working within the Data Visualization team, I develop the next features for the Pigment platform with a strong emphasis on front-end development.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jan 2024 - Present",
+  },
+  {
     title: "Solutions Engineer",
     location: "Doctolib, Paris",
     description:
