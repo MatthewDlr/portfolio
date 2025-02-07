@@ -39,7 +39,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Software Engineer",
-    location: "Pigment SAS",
+    location: "Pigment",
     description:
       "Working within the Data Visualization team, I develop the next features for the Pigment platform with a strong emphasis on front-end development.",
     icon: React.createElement(CgWorkAlt),
@@ -47,7 +47,7 @@ export const experiencesData = [
   },
   {
     title: "Solutions Engineer",
-    location: "Doctolib, Paris",
+    location: "Doctolib",
     description:
       "I worked within the Team Support to address concerns from health professionals. As part of my internship project, I developed a database of SQL queries aimed at streamlining case resolutions for my team.",
     icon: React.createElement(CgWorkAlt),
@@ -55,7 +55,7 @@ export const experiencesData = [
   },
   {
     title: "Software Engineer",
-    location: "Junior ISEP, Paris",
+    location: "Junior ISEP",
     description:
       "Junior ISEP is an association within my school that I helped develop many internal tools to participate in its growth and progress.",
     icon: React.createElement(FaDev),
