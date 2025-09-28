@@ -15,7 +15,7 @@ export const TextGenerateEffect = ({ words, className, inView }: { words: string
         },
         {
           duration: 2,
-          delay: stagger(0.025),
+          delay: stagger(0.015),
         },
       );
     }

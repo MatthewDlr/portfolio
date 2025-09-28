@@ -39,14 +39,22 @@ export const links = [
 export const experiencesData = [
   {
     title: "Software Engineer",
-    location: "Pigment",
+    location: "Theodo",
     description:
-      "Working within the Data Visualization team, I develop the next features for the Pigment platform with a strong emphasis on front-end development.",
+      "I'm now working as a full-time software engineer at Theodo. Working on unannounced projects 👀, I develop web applications for various clients, mainly using Angular and Nest.js.",
     icon: React.createElement(CgWorkAlt),
-    date: "Jan 2025 - Present",
+    date: "September 2025 - Present",
   },
   {
-    title: "Solutions Engineer",
+    title: "Frontend Engineer Intern",
+    location: "Pigment",
+    description:
+      "Working within the Data Visualization team, I've developed many features for the Pigment platform with a strong emphasis on front-end development.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jan 2025 - July 2025",
+  },
+  {
+    title: "Solutions Engineer Intern",
     location: "Doctolib",
     description:
       "I worked within the Team Support to address concerns from health professionals. As part of my internship project, I developed a database of SQL queries aimed at streamlining case resolutions for my team.",
@@ -121,21 +129,17 @@ export const projectsData = [
 
 export const skillsData = [
   "Python",
-  "Java",
-  "PHP",
   "Angular",
   "TailwindCSS",
+  "TypeScript",
   "Nest.js",
-  "TypeORM",
   "PostgreSQL",
   "SQL",
   "Supabase",
   "Next.js",
   "TensorFlow.js",
-  "Git",
   "d3.js",
-  "Framer",
-  "Vercel",
+  "GSAP",
   "Docker",
   "Figma",
   "Metabase",
