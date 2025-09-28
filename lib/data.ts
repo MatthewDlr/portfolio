@@ -77,7 +77,7 @@ export const projectsData = [
     description: "A fresh new color palette generator, supporting the new upcoming tailwindcss 4.0 configuration file.",
     tags: ["Angular", "TailwindCSS", "Vercel"],
     imageUrl: tailwindPaletteGeneratorImg,
-    redirectUrl: "https://app.daily.dev/posts/7axa8iWBo",
+    redirectUrl: "https://tailwind.mdelarue.dev",
   },
   {
     title: "Satellite UI",
