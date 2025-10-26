@@ -37,9 +37,9 @@ export default function Contact() {
           Please contact me directly at{" "}
           <a
             className="underline"
-            href="mailto:matthieu.delarue@berkeley.edu"
+            href="mailto:contact@mdelarue.dev"
           >
-            matthieu.delarue@berkeley.edu
+            contact@mdelarue.dev
           </a>{" "}
           or through this form.
         </p>

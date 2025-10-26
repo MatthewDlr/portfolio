@@ -41,7 +41,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Theodo",
     description:
-      "I'm now working as a full-time software engineer at Theodo. Working on unannounced projects 👀, I develop web applications for various clients, mainly using Angular and Nest.js.",
+      "I'm now working as a full-time software engineer at Theodo. Working on unannounced projects 👀, I develop web applications for clients, mainly using Angular and React",
     icon: React.createElement(CgWorkAlt),
     date: "September 2025 - Present",
   },
