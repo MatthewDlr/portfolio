@@ -73,8 +73,8 @@ importers:
         version: 5.5.3
     devDependencies:
       '@types/react-vertical-timeline-component':
-        specifier: ^3.3.3
-        version: 3.3.3
+        specifier: ^3.3.6
+        version: 3.3.6
       autoprefixer:
         specifier: 10.4.19
         version: 10.4.19(postcss@8.4.39)
@@ -341,8 +341,8 @@ packages:
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
-  '@types/react-vertical-timeline-component@3.3.3':
-    resolution: {integrity: sha512-xmKeQ9TtZLeGtsWQx2im0U79wnC0M2F/FPEAHP7uS3G9SAVgis1XSHzq/mq7XrcbnI9eiZbL7dhiy/TqCuDc7w==}
+  '@types/react-vertical-timeline-component@3.3.6':
+    resolution: {integrity: sha512-OUvyPXRjXvUD/SNLO0CW0GbIxVF32Ios5qHecMSfw6kxnK1cPULD9NV80EuqZ3WmS/s6BgbcwmN8k4ISb3akhQ==}
 
   '@types/react@18.3.3':
     resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
@@ -2318,7 +2318,7 @@ snapshots:
     dependencies:
       '@types/react': 18.3.3
 
-  '@types/react-vertical-timeline-component@3.3.3':
+  '@types/react-vertical-timeline-component@3.3.6':
     dependencies:
       '@types/react': 18.3.3
 
